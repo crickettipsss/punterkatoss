@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PUNTER KA TOSS</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(ellipse at 50% 15%, #26300b 0%, transparent 55%),
+    linear-gradient(145deg, #00190c, #002714, #001207);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.card {
+  width: calc(100% - 48px);
+  max-width: 640px;
+  height: 72%;
+  max-height: 1000px;
+  min-height: 0;
+  border: 1px solid rgba(199, 157, 38, .55);
+  border-radius: 42px;
+  background: linear-gradient(160deg,
+    rgba(0, 49, 27, .88),
+    rgba(0, 23, 13, .97));
+  box-shadow: 0 0 30px rgba(216, 174, 34, .08);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(190,150,25,.07), transparent 65%);
+  pointer-events: none;
+}
+
+* {
+  position: relative;
+}
+
+.card:before {
+  position: absolute;
+}
+
+.report {
+  color: #f4c832;
+  border: 1px solid #92751b;
+  border-radius: 40px;
+  padding: 10px 22px;
+  font-size: clamp(12px, 3.5vw, 20px);
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px rgba(255, 204, 35, .12);
+  flex-shrink: 0;
+}
+
+.logo {
+  width: clamp(115px, 27vw, 220px);
+  height: clamp(115px, 27vw, 220px);
+  padding: 7px;
+  border-radius: 35px;
+  background: linear-gradient(145deg, #f9d64a, #6f570b, #e9b62a);
+  box-shadow: 0 0 25px rgba(240, 190, 30, .25);
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 28px;
+  display: block;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.feature {
+  border: 1px solid #92751b;
+  border-radius: 35px;
+  padding: 10px 17px;
+  color: #f3c642;
+  font-size: clamp(12px, 3.3vw, 19px);
+  letter-spacing: .4px;
+  white-space: nowrap;
+}
+
+h1 {
+  color: #f4c63c;
+  font-family: Georgia, serif;
+  font-size: clamp(27px, 6.5vw, 48px);
+  font-weight: normal;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.description {
+  color: #a9b9ae;
+  font-size: clamp(13px, 3.5vw, 20px);
+  line-height: 1.7;
+  max-width: 490px;
+}
+
+.description span {
+  color: #24d58a;
+}
+
+.join {
+  width: 100%;
+  min-height: clamp(58px, 10vh, 95px);
+  border-radius: 60px;
+  background: linear-gradient(100deg, #ff9e12, #ffe34e);
+  color: #271500;
+  text-decoration: none;
+  font-size: clamp(15px, 4vw, 25px);
+  font-weight: bold;
+  letter-spacing: .5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  box-shadow: 0 8px 25px rgba(255, 193, 25, .18);
+  flex-shrink: 0;
+}
+
+.join .telegram {
+  font-size: 24px;
+}
+
+.footer {
+  color: #9cac9f;
+  font-size: clamp(11px, 3vw, 17px);
+  letter-spacing: 2px;
+}
+
+@media (max-height: 700px) {
+  .card {
+    height: 88%;
+    padding: 10px 16px;
+    border-radius: 28px;
+  }
+  .logo {
+    width: clamp(75px, 17vh, 125px);
+    height: clamp(75px, 17vh, 125px);
+    border-radius: 23px;
+  }
+  .logo img {
+    border-radius: 17px;
+  }
+  .report, .feature {
+    padding: 7px 12px;
+  }
+  .description {
+    line-height: 1.35;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="card">
+
+  <div class="report">
+    🟡 LIVE TOSS REPORT
+  </div>
+
+  <div class="logo">
+    <img src="logo.jpg" alt="Punter Ka Toss Logo">
+  </div>
+
+  <div class="features">
+    <div class="feature">🏏 Match Analysis</div>
+    <div class="feature">⚡ Toss Updates</div>
+    <div class="feature">🎯 Daily Predictions</div>
+  </div>
+
+  <h1>PUNTER KA TOSS</h1>
+
+  <p class="description">
+    Official <span>FREE</span> Telegram community —
+    daily toss updates aur match insights sabse pehle yahin milega.
+  </p>
+
+  <a class="join" href="https://t.me/+DoMNk2_Ww-VhNGE1">
+    <span class="telegram">➤</span>
+    JOIN FREE TELEGRAM
+  </a>
+
+  <div class="footer">
+    FREE · TELEGRAM · DAILY UPDATES
+  </div>
+
+</main>
+
+</body>
+</html>
